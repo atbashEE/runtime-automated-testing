@@ -14,3 +14,6 @@ Java directory contains some support artifacts.
 
 - logging: WAR file that can produce (a lot if needed) entries in the log file.
 - AtbashJFRDump : A program that filters out the "be.atbash.runtime.event" Flight record events from a dump file and outputs them as a JSON.
+
+
+Python directory contains the scripts for the test scenarios.
