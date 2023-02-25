@@ -1,0 +1,6 @@
+domain Atbash
+bean Atbash:name=data,type=Server.applications
+get *
+bye
+
+

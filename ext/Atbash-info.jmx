@@ -1,0 +1,6 @@
+domain Atbash
+bean Atbash:name=Info,type=Runtime
+get *
+bye
+
+

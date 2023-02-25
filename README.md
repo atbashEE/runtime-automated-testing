@@ -17,3 +17,19 @@ Java directory contains some support artifacts.
 
 
 Python directory contains the scripts for the test scenarios.
+
+Directory `ext` contains a few files used by the scripts and the program `jmxterm-1.0.2-uber.jar` downloaded from https://docs.cyclopsgroup.org/jmxterm.
+
+The directory `scripts` contains the shell scripts to prepare the environment for testing.
+
+## Setup
+
+To set up the environment for running all testing scenarios, perform the following steps.
+
+- Download the contents of the repo within a directory, called `TESTING_HOME` in the rest of this document.
+- Perform a `man clean package` within the _logging_ and _AtbashJFRDump_ dirctories so that the java artefacts are prepared.
+- Configure the script by defining all the required files within the file `config.sh`, including the Atbash Runtime Zip distribution, the Atbash Runtime CLI and a demo which are all available from some download area or created by the main https://github.com/atbashEE/runtime repository.
+- Open a console with `<TESTING_HOME>/scripts` as working directory.
+- Execute the `prepare_work.sh` script
+- The end of the installation script shows the command to switch to the work directory that is prepared and start the virtual environment of Python.
+- With the script `all_scenarios.sh', all scenarios are tested, and takes about 5 minutes.

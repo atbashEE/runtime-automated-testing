@@ -21,8 +21,8 @@ import java.time.Instant;
 
 public class EventData {
 
-    private Instant startTime;
-    private String message;
+    private final Instant startTime;
+    private final String message;
 
     public EventData(RecordedEvent event) {
         startTime = event.getInstant("startTime");
